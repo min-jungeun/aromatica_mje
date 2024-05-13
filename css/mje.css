@@ -1,0 +1,48 @@
+#hd{
+    padding: 10px 35px;
+    justify-content: space-between;
+     h1{
+        a{
+            img{
+                width: 160px;
+                height: auto;
+                background-color: black;
+            }
+        }
+     }
+}
+.inner{
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+}
+.gnb{
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 10px;
+    li{
+        margin-right: 1rem;
+    }
+    
+    
+}
+.iconMenu{
+    margin-top: 10px;
+}
+.iconMenu li{
+    margin-right: 1rem;
+}
+
+.sr_only{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}

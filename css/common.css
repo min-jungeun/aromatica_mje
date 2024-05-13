@@ -2,9 +2,8 @@
 body{
     font-family: 'Noto Sans KR'; 
 }
-h2{
-    text-align: center;
-}
+
 a{
     text-decoration: none;
+    color: black;
 }
