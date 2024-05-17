@@ -1,16 +1,213 @@
 #hd{
     h1{
+        position: relative;
         img{
             max-width: 200px;
         }
     }
     .gnb{
-        li{
-            a{
+
+        li a{
                 text-decoration: none;
                 color: white;
+                white-space: nowrap;
             }
+        
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0; right: 0;
+            top: 100%;
+            height: 0;
+            transition: 0.5s;
 
         }
+        &:hover{
+            &:before{
+                height: 200px;
+            }
+            .gnb_li{
+                &:hover{
+                    .gnb_ul{
+                        z-index: 1000;
+                         a:hover{
+                            text-decoration: underline; // 활성화
+                        } 
+                    }
+                }
+                
+                .gnb_ul{
+                 height: 180px;
+                
+
+                }
+            }
+        }
+            
+        .gnb_li{
+            padding: 0 35px !important; 
+              
+         
+            .gnb_a{
+                font-size: 1rem;
+            }
+            .gnb_ul{
+                min-width: 11rem;
+                overflow: hidden;
+                height: 0;
+                transition: 0.5s;
+                text-align: center;
+                font-size: 0.9rem;
+                &.shop{
+                    left: -55px !important;
+                }
+                &.brend{
+                    left: -48px !important;
+                }
+                &.continue{
+                    left: -45px !important;
+                }
+                &.commu{
+                    left: -39px !important;
+                }
+                
+
+
+
+                &:after,
+                &:before{
+                    content: "";
+                    display: block;
+                    height: 1rem;
+                }
+                
+                
+            }
+        
+        }
+        
     }
+        
 }
+
+  
+
+
+// #hd{
+//     h1{
+//         img{
+//             max-width: 200px;
+//         }
+//     }
+//     .gnb{
+//         li{
+//             a{
+//                 text-decoration: none;
+//                 color: white;
+//             }
+
+//         }
+//     }
+// }
+
+// .gnb{
+//     ul{
+//         top: 100%;
+//         font-size: 1em;
+//         white-space: nowrap;
+//         height: 0;
+//         transition: 0.5s;
+//         overflow: hidden;
+//         min-width: 100px;
+//         text-align: center;
+        
+        
+//     }
+//     &:hover{
+//         ul{
+//             height: 180px;
+//         }
+//     }
+    
+//     .gnb_ul{
+//             > a{
+//                 font-weight: bold;
+        
+//         li:hover{
+//                 > a{
+//                     text-decoration: underline;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+// #hd{
+//     position: relative;
+//     h1{
+//         img{
+//             max-width: 200px;
+//         }
+//     }
+//     .gnb{
+//         &::before{
+//             content: "";
+//             position: absolute;
+//             left: 0; right: 0;
+//             top: 100%;
+//             height: 0;
+//             transition: 0.5s;
+//         }
+//         &:hover{
+//             &::before{
+//                 height: 180px;
+//             }
+//             .gnb_li{
+//                 &:hover{
+//                     .gnb_a{
+//                         text-decoration: underline;
+//                     }
+//                 }
+//                 .gnb_ul{
+//                     height: 180px;
+//                 }
+//             }
+//         }
+
+//         li{
+//             a{
+//                 text-decoration: none;
+//                 color: white;
+//             }
+
+//         }
+//         .gnb_li{
+//             padding: 0 35px !important;
+
+//             .gnb_a{
+//                 font-size: 1rem;
+//                 text-decoration: underline;
+//             }
+//             .gnb_ul{
+//                 min-width: 10rem;
+//                 overflow: hidden;
+//                 height: 0;
+//                 transition: 0.5s;
+//                 left: -35px;
+//                 text-align: center;
+//                 &::after,
+//                 &::before{
+//                     content: "";
+//                     display: block;
+//                     height: 1rem;
+//                 }
+//             }
+//         }
+//     }
+
+// }
